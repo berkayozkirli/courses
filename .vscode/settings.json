@@ -1,0 +1,9 @@
+{
+  "python.defaultInterpreterPath": "${workspaceFolder}/code/.venv/bin/python3",
+  "python.terminal.activateEnvironment": true,
+  "python.analysis.autoSearchPaths": true,
+  "python.analysis.extraPaths": [
+    "code/src"
+  ],
+  "jupyter.notebookFileRoot": "${workspaceFolder}"
+}

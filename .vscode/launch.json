@@ -1,0 +1,13 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "Run ML Experiment",
+      "type": "debugpy",
+      "request": "launch",
+      "program": "${workspaceFolder}/code/src/train.py",
+      "console": "integratedTerminal",
+      "justMyCode": true
+    }
+  ]
+}
