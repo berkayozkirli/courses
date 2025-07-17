@@ -1,5 +1,5 @@
 #let title = [
-  Probabilistic Systems Analysis and Applied Probability
+  Probability
 ]
 #set page(
   paper: "us-letter",
@@ -22,21 +22,23 @@
   ])
 ]
 #set heading(numbering: "1.")
-= Probability Models and Axioms
-Sample Space: Description of all things that may happen during a random experiment.
+= Combinatorial Analysis
+The basic principle of counting: if one experiment can result in $m$ possible outcomes and another one can result in $n$ possible outcomes, then there are $m n$ possible outcomes of the two experimets.
 
-Probability Law: Our beliefs about which outcomes are more likely to occur.
+== Permutation
+$ n (n-1) (n-2)...3 dot 2 dot 1 = n! $
+is the number of different different permutations of $n$ objects.
 
-Sample spaces $Omega$ are sets that contain all the possible things that can happen as a result of an experiment. Elements of this set need to be mutually exclusive and collectively exhaustive.
+*examlpe* 10 books to put on a bookshelf. Of these, 4 are mathematics books, 3 are chemistry books, 2 are history books, and 1 is a language book. All the books dealing with the same subject are together on the shelf. How many different arrangements are possible?
 
-example: $Omega = {(x,y)| 0 lt.eq x,y lt.eq 1}$
+*solution* There are 4! 3! 2! 1! arrangements such that the mathematics books are first in line, then the chemistry books, then the history books, and then the language book. Similarly, for each possible ordering of the subjects, there are 4! 3! 2! 1! possible arrangements. Hence, as there are 4! possible orderings of the subjects, the desired answer is 4! 4! 3! 2! 1! = 6912.
 
-An event is a subset of the sample space, probability is assigned to events.
+*example* How many different letter arrangements can be formed from the letters PEPPER?
 
-Axioms:
-- Nonnegativity: $P(A) gt.eq 0$
-- Normalizaiton: $P(Omega) = 1$
-- Addtivity: If $A inter B = emptyset$ then $P(A union B) = P(A) + P(B)$
+*solution* We first note that there are 6! permutations of the letters $P_1E_1P_2P_3E_2R$ when the 3P's and the 2E's are distinguished from one another. However, consider any one of these permutations—for instance, $P_1P_2E_1P_3E_2R$. If we now permute the P's among themselves and the E's among themselves, then the resultant arrangement would still be of the form PPEPER. That is, all 3! 2! permutations are of the form PPEPER. Hence, there are 6!/(3! 2!) = 60 possible letter arrange-
+ments of the letters PEPPER.
+
+In general, the same reasoning shows that there are $ n! / (n_1 ! n_2 ! ... n_r !) $ different permutations of $n$ objects, of which $n_1$ are alike $n_2$ are alike,...,$n_r$ are alike.
 
 
 
