@@ -103,7 +103,7 @@ A relation $R$ having three properties:
 - $a R b and b R c arrow a R c$ (transitivity)
 is called a partial ordering.
 
-If the condition $forall a forall b ((a R b) or (b R a))$ holds on partial oredering then the reltion is an ordering.
+If the condition $forall a forall b ((a R b) or (b R a))$ holds on partial ordering then the relation is an ordering.
 
 A relation $R$ is said to be functional if $ (x R y_1) and (x R y_2) arrow (y_1 = y_2) $ A functional relation is called a function.
 
@@ -115,7 +115,7 @@ When defined as a subset, a function and its graph are the same.
 === Cardinality of a Set
 The set $X$ is said to have a equipollent to the set $Y$ if there exists a bijective mapping of $X$ onto $Y$. It is clear that the relation $X R Y$ is an equivalence relation.
 
-The relation of equipollence, partitions the collection of all sets into classes of mutuallt equivalent sets. Sets of an equivalence class has the same number of elements.
+The relation of equipollence, partitions the collection of all sets into classes of mutually equivalent sets. Sets of an equivalence class has the same number of elements.
 
 The class to which a set $X$ belongs is called the cardinality of $X$. If $X tilde Y$ we can write $"card" X = "card" Y$.
 
@@ -129,7 +129,7 @@ Equipollence relation has the following properties:
 - $"card" X lt.eq "card" Y and "card" Y lt.eq "card" Z arrow.r "card" X lt.eq "card" Z$
 - $"card" X lt.eq "card" Y and "card" Y lt.eq "card" X arrow.r "card" X = "card" Y$(Schröder-Bernstein Theorem)
 - $forall X forall Y ("card" X lt.eq "card" Y) or ("card" Y lt.eq "card" X)$(Cantor's Theorem)
-Thus the class of cardinal numbers is linearlt ordered.
+Thus the class of cardinal numbers is linearly ordered.
 
 Theorem $"card" X lt "card" cal(P)(X)$
 
@@ -192,4 +192,8 @@ Does the given system of axioms determine the mathematical object uniquely? That
   - There is only one multiplicative unit in the real numbers
   - For each $x eq.not 0$ there is only one reciprocal $x^(-1)$
   - For $a in RR\\0$ the equation $a dot x = b$ has the unique solution $x=b dot a^(-1)$
+- For any $x in RR, x dot 0 = 0 dot x = 0$.
+_Proof_ $ (x dot 0 = x dot (0+0) = x dot 0 + x dot 0) arrow.r \ (x dot 0 = x dot 0+ (-(x dot 0)) = 0) $
+
+
 
